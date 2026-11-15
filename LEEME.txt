@@ -1,0 +1,20 @@
+HANDSUB -> GITHUB PAGES -> PWABUILDER (APK ANDROID)
+
+1. Descomprime este ZIP. Dentro de la carpeta deben verse estos archivos:
+   index.html, manifest.json, sw.js, icon.svg, icon-192.png, icon-512.png,
+   icon-maskable-512.png, screenshot-mobile.png y .nojekyll
+
+2. Crea un repositorio PUBLICO en https://github.com/new (ej: handsub-android).
+
+3. En el repositorio: "uploading an existing file" y arrastra TODOS los archivos
+   (los archivos, no la carpeta que los contiene). Pulsa "Commit changes".
+   Importante: index.html tiene que quedar en la raiz del repositorio.
+
+4. Settings -> Pages -> Branch: main, carpeta /(root) -> Save.
+   Espera 1-2 minutos. GitHub te dara un enlace como:
+   https://TU-USUARIO.github.io/handsub-android/
+
+5. Abre ese enlace en el navegador para comprobar que carga.
+
+6. Pega el mismo enlace en https://www.pwabuilder.com -> Start -> Package for stores
+   -> Android -> Generate.

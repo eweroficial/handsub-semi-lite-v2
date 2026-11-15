@@ -1,0 +1,99 @@
+{
+  "id": "./?source=pwa",
+  "name": "HandSub — Native Hardsub & 1080p MP4 Engine",
+  "short_name": "HandSub",
+  "description": "Quemador nativo de subtítulos Hardsub (.MKV a .MP4 1920x1080p @ 23.98fps CFR y Audio AAC 320kbps) en 2º plano con ThermalGuard.",
+  "lang": "es",
+  "dir": "ltr",
+  "start_url": "./index.html?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "fullscreen",
+    "window-controls-overlay"
+  ],
+  "orientation": "any",
+  "background_color": "#090A0F",
+  "theme_color": "#090A0F",
+  "categories": [
+    "video",
+    "multimedia",
+    "utilities",
+    "productivity"
+  ],
+  "prefer_related_applications": false,
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./screenshot-mobile.png",
+      "sizes": "540x960",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "HandSub 1080p 23.98fps Hardsub Engine en Android"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Importar .MKV y Quemar .MP4",
+      "short_name": "Quemar .MKV",
+      "description": "Importa un archivo .MKV y quema subtítulos a 1920x1080p @ 23.98fps",
+      "url": "./index.html?action=import",
+      "icons": [
+        {
+          "src": "./icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "./index.html",
+      "accept": {
+        "video/x-matroska": [
+          ".mkv"
+        ],
+        "video/mp4": [
+          ".mp4"
+        ],
+        "text/x-ssa": [
+          ".ass",
+          ".ssa"
+        ],
+        "application/x-subrip": [
+          ".srt"
+        ]
+      }
+    }
+  ]
+}
